@@ -18,6 +18,9 @@ const Read = () => {
                 console.log(response.data)
 
                 setLoading(false)
+            }).catch((err)=>{
+
+                console.log(err)
             })
 
 
@@ -27,6 +30,9 @@ const Read = () => {
             .then(() => {
                 getData()
 
+            }).catch((err)=>{
+
+                console.log(err)
             })
 
     }
